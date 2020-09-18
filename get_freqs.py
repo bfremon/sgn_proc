@@ -15,7 +15,7 @@ def get_freqs(t, s, smpl_freq):
     '''
     # adapted from https://www.ritchievink.com/blog/2017/04/23/understanding-the-fourier-transform-by-example/
     if len(t) != len(s):
-        raise SyntaxError('x and y should have the same lenght')
+        raise SyntaxError('t and s should have the same lenght')
     if smpl_freq < 0.0:
         raise SyntaxError('smpl_freq must be a positive float')
     smpl_inter = t[1] - t[0] # sampling interval
