@@ -6,6 +6,6 @@ test:
 	$(python3) -m unittest discover
 
 clean:
-	$(rm) __pycache__
+	$(rm) __pycache__ \#*\# \.#*
 
 .PHONY: clean test
